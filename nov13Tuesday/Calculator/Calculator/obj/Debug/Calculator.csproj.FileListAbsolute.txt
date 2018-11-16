@@ -1,0 +1,14 @@
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache

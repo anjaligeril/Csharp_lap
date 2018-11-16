@@ -1,0 +1,6 @@
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\bin\Debug\Application.exe.config
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\obj\Debug\Application.csprojResolveAssemblyReference.cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\obj\Debug\MainWindow.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\obj\Debug\App.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\obj\Debug\Application_MarkupCompile.cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application\Application\obj\Debug\Application_MarkupCompile.lref

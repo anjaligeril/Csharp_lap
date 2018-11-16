@@ -1,0 +1,14 @@
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\bin\Debug\Application1.exe.config
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\bin\Debug\Application1.exe
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\bin\Debug\Application1.pdb
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.csprojResolveAssemblyReference.cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\MainWindow.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\App.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1_MarkupCompile.cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1_MarkupCompile.lref
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\MainWindow.baml
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.g.resources
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.Properties.Resources.resources
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.csproj.GenerateResource.Cache
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.exe
+C:\Users\geril\Desktop\ANJALI\c#\nov13Tuesday\Application1\Application1\obj\Debug\Application1.pdb
