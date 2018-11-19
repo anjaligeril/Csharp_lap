@@ -12,3 +12,7 @@ C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\app.Properties
 C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\app.csproj.GenerateResource.Cache
 C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\app.exe
 C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\app.pdb
+C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\bin\Debug\MySql.Data.dll
+C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\bin\Debug\MySql.Data.xml
+C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\Window2.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\nov14Wednesday\app\app\obj\Debug\Window2.baml

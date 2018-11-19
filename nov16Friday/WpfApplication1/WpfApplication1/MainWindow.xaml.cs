@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AlwaysPizza
+namespace WpfApplication1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +23,6 @@ namespace AlwaysPizza
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void radioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

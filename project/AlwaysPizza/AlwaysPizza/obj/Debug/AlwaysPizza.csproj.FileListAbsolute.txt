@@ -1,1 +1,14 @@
 C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\bin\Debug\AlwaysPizza.exe.config
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\bin\Debug\AlwaysPizza.exe
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\bin\Debug\AlwaysPizza.pdb
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.csprojResolveAssemblyReference.cache
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\MainWindow.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\App.g.cs
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza_MarkupCompile.cache
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza_MarkupCompile.lref
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\MainWindow.baml
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.g.resources
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.Properties.Resources.resources
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.csproj.GenerateResource.Cache
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.exe
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.pdb

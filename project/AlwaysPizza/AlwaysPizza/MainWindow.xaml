@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AlwaysPizza"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="604.999" Width="1045.375">
+    <Grid Background="#FF7E7878">
+        <Grid x:Name="header" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="1039" Margin="0,0,-0.333,0" Background="#FFF5EBEB"/>
+        <Grid HorizontalAlignment="Left" Height="297" Margin="10,143,0,0" VerticalAlignment="Top" Width="221"/>
+        <Grid HorizontalAlignment="Left" Height="305" Margin="10,153,0,0" VerticalAlignment="Top" Width="221" Background="#FFDA7D7D"/>
+        <Grid HorizontalAlignment="Left" Height="305" Margin="249,153,0,0" VerticalAlignment="Top" Width="221" Background="#FFC62323">
+            <GroupBox x:Name="groupBox1" Header="GroupBox" HorizontalAlignment="Left" Margin="-233,15,0,0" VerticalAlignment="Top" Height="278" Width="201">
+                <RadioButton x:Name="radioButton2" Content="RadioButton" HorizontalAlignment="Left" Margin="32,130,0,0" VerticalAlignment="Top"/>
+            </GroupBox>
+            <GroupBox x:Name="groupBox2" Header="GroupBox" Margin="10,15,10,0" VerticalAlignment="Top" Height="278">
+                <RadioButton x:Name="radioButton3" Content="RadioButton" HorizontalAlignment="Left" Margin="77,123,0,0" VerticalAlignment="Top"/>
+            </GroupBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="305" Margin="789,153,0,0" VerticalAlignment="Top" Width="226" Background="#FFFA0F0F"/>
+        <Grid HorizontalAlignment="Left" Height="234" Margin="35,193,0,0" VerticalAlignment="Top" Width="159"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="54,229,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="55,274,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

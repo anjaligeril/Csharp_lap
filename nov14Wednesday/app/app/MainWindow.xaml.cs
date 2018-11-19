@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using MySql.Data.MySqlClient;
 namespace app
 {
     /// <summary>
@@ -49,15 +49,39 @@ namespace app
             {
                 preference = "part time";
             }
-            if (firstName != "" && lastName != "" && childAddress != "" && phoneNo != ""&&gender!="" && preference=="")
+            Console.Write(firstName + lastName + childAddress + phoneNo + gender + preference);
+            if (firstName != "" && lastName != "" && childAddress != "" && phoneNo != ""&&gender!="" && preference!="")
             {
+                Console.Write(firstName + lastName + childAddress + phoneNo + gender + preference);
                 if (phoneNo.Length != 10)
                 {
                     MessageBox.Show("Please enter valid phone number");
                 }
                 else
                 {
-                    MessageBox.Show("Information submitted successfully.");
+                    string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=childrenshappyplace;";
+                    string query = "INSERT INTO student(`student_id`, `firstName`, `lastName`, `address`,`phone`,`gender`,`mode`) VALUES (NULL, '" + firstName + "', '" + lastName + "', '" + childAddress + "','" + phoneNo + "','" + gender + "','" + preference + "')";
+                    // Which could be translated manually to :
+                    // INSERT INTO user(`id`, `first_name`, `last_name`, `address`) VALUES (NULL, 'John', 'Doe', 'John Doe Villa')
+
+                    MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+                    MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+                    commandDatabase.CommandTimeout = 60;
+
+                    try
+                    {
+                        databaseConnection.Open();
+                        MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                        MessageBox.Show("User succesfully registered");
+
+                        databaseConnection.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Show any error message.
+                        MessageBox.Show(ex.Message);
+                    }
 
                 }
             }
@@ -87,6 +111,13 @@ namespace app
         private void exitBtn_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.MainWindow.Close();
+        }
+
+        private void show_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 win2 = new Window2();
+            win2.Show();
+            this.Hide();
         }
     }
 }

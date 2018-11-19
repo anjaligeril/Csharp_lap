@@ -24,12 +24,13 @@
             <Label x:Name="label6" Content="Preferences" HorizontalAlignment="Left" Margin="312,131,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <RadioButton x:Name="fullBtn" Content="Full Time" HorizontalAlignment="Left" Margin="405,119,0,0" VerticalAlignment="Top" GroupName="option2"/>
             <RadioButton x:Name="partBtn" Content="Part Time" HorizontalAlignment="Left" Margin="406,151,0,0" VerticalAlignment="Top" GroupName="option2"/>
-            <Button x:Name="exitBtn" Content="Exit" HorizontalAlignment="Left" Margin="338,287,0,0" VerticalAlignment="Top" Width="75" Click="exitBtn_Click"/>
+            <Button x:Name="exitBtn" Content="Exit" HorizontalAlignment="Left" Margin="451,240,0,0" VerticalAlignment="Top" Width="75" Click="exitBtn_Click"/>
+            <Button x:Name="show" Content="List Students" HorizontalAlignment="Left" Margin="327,240,0,0" VerticalAlignment="Top" Width="75" Click="show_Click"/>
         </Grid>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="196" Margin="611,175,0,0" VerticalAlignment="Top" Width="176" Source="https://balgreenprimary.files.wordpress.com/2015/09/social-studies.jpg" Stretch="Fill"/>
         <Grid HorizontalAlignment="Left" Height="87" VerticalAlignment="Top" Width="818" Background="#FF7564D3">
             <Image x:Name="image" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="99" Source="https://i.pinimg.com/originals/23/aa/90/23aa9032be7880aa33b31d4b15733eac.jpg" Margin="104,10,0,0"/>
-            <Label x:Name="label" Content="Childrens Happy Place" HorizontalAlignment="Left" Margin="395,28,0,0" VerticalAlignment="Top" Width="253" FontSize="18" FontFamily="Rockwell Extra Bold"/>
+            <Label x:Name="label" Content="Childrens Happy Place" HorizontalAlignment="Left" Margin="225,28,0,0" VerticalAlignment="Top" Width="501" FontSize="36" FontFamily="Snap ITC" FontStyle="Italic"/>
         </Grid>
     </Grid>
 </Window>
