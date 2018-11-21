@@ -1,0 +1,76 @@
+﻿<Window x:Class="AlwaysPizza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlwaysPizza"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="725" Width="1312.043">
+    <Grid Background="#FFE7A0A0" Margin="0,0,3.333,5.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="1302">
+            <Grid.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF8C0A0A" Offset="1"/>
+                    <GradientStop Color="#FFCA3A3A" Offset="0.658"/>
+                </RadialGradientBrush>
+            </Grid.Background>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="73" Margin="372,10,0,0" VerticalAlignment="Top" Width="169" Source="https://media-cdn.tripadvisor.com/media/photo-s/13/59/02/d7/hawai-pizza.jpg"/>
+        </Grid>
+        <Label x:Name="label" Content="ALWAYS PIZZA !!!" HorizontalAlignment="Left" Margin="650,10,0,0" VerticalAlignment="Top" FontFamily="Lucida Calligraphy" FontSize="36" FontWeight="Bold" Foreground="#FFA0E7C6" Height="75" Width="509"/>
+        <Grid HorizontalAlignment="Left" Height="430" Margin="10,148,0,0" VerticalAlignment="Top" Width="234" Background="#FFD74C4C"/>
+        <Label x:Name="label1" Content="Choose Your Pizza !!.." HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Foreground="#FF1C7878" FontSize="24" FontWeight="Bold" FontStyle="Italic" FontFamily="Sitka Heading" Height="35" Width="351"/>
+        <GroupBox x:Name="groupBox" Header="SIZE" HorizontalAlignment="Left" Margin="23,150,0,0" VerticalAlignment="Top" Height="415" Width="208" Content="" FontSize="36" FontFamily="Sitka Heading" FontWeight="Bold" FontStyle="Italic" Foreground="#FFDCD8D8"/>
+        <RadioButton x:Name="smallSize" Content="SMALL" HorizontalAlignment="Left" Margin="83,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.886,-5.932" Foreground="#FFF5E70F" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" Height="19" Width="75"/>
+        <RadioButton x:Name="mediumSize" Content="MEDIUM" HorizontalAlignment="Left" Margin="83,297,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="18" FontStyle="Italic" Foreground="#FFF5E70F" Height="21" Width="101"/>
+        <RadioButton x:Name="largeSize" Content="LARGE" HorizontalAlignment="Left" Margin="83,359,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Sitka Small" FontStyle="Italic" Foreground="#FFF5E70F" Height="27" Width="94"/>
+        <Grid HorizontalAlignment="Left" Height="428" Margin="278,150,0,0" VerticalAlignment="Top" Width="280" Background="#FFD74C4C">
+            <GroupBox x:Name="groupBox1" Header="CREST" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="418" Width="260" Foreground="#FFDCD8D8" FontFamily="Sitka Heading" FontSize="36" FontStyle="Italic" FontWeight="Bold">
+                <Grid HorizontalAlignment="Left" Height="247" Margin="10,0,0,0" VerticalAlignment="Top" Width="176">
+                    <RadioButton x:Name="normalCrest" Content="NORMAL" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Foreground="#FF34AA0E" FontSize="20" FontFamily="Sitka Small" FontWeight="Normal"/>
+                    <RadioButton x:Name="thinCrest" Content="THIN" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" FontWeight="Normal" Foreground="#FF34AA0E"/>
+                    <RadioButton x:Name="thickCrest" Content="THICK" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.446,-0.015" Foreground="#FF34AA0E" FontSize="20" FontFamily="Sitka Small" FontWeight="Normal"/>
+                    <RadioButton x:Name="panCrest" Content="PAN FRIED-Add $2" HorizontalAlignment="Left" Margin="10,174,-50,0" VerticalAlignment="Top" Foreground="#FF34AA0E" FontSize="20" FontFamily="Sitka Small" FontWeight="Normal" Width="216"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="387" Margin="590,150,0,0" VerticalAlignment="Top" Width="287" Background="#FFD74C4C">
+            <GroupBox x:Name="groupBox2" Header="TOPPING" HorizontalAlignment="Left" VerticalAlignment="Top" Height="381" Width="271" Foreground="#FFDCD8D8" FontSize="24" FontFamily="Sitka Heading" FontWeight="Bold" FontStyle="Italic" Margin="10,0,0,0">
+                <Grid HorizontalAlignment="Left" Height="356" Margin="10,0,0,0" VerticalAlignment="Top" Width="238">
+                    <CheckBox x:Name="fetaTopping" Content="FETA CHEESE" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold" Foreground="#FF163DA7"/>
+                    <CheckBox x:Name="cheddarTopping" Content="CHEDDAR CHEESE" HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold" Foreground="#FF163DA7"/>
+                    <CheckBox x:Name="blackOlivesTopping" Content="BLACK OLIVES" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,87,0,0" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold" Foreground="#FF163DA7"/>
+                    <CheckBox x:Name="greenOlivesTopping" Content="GREEN OLIVES" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold"/>
+                    <CheckBox x:Name="dryChilliTopping" Content="DRY CHILLI PEPPER" HorizontalAlignment="Left" Margin="0,145,-26,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold" Foreground="#FF163DA7" Width="241"/>
+                    <CheckBox x:Name="jalapenos" Content="JALAPENOS" HorizontalAlignment="Left" Margin="0,175,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold"/>
+                    <CheckBox x:Name="mushroomTopping" Content="MUSHROOMS" HorizontalAlignment="Left" Margin="0,203,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold" Foreground="#FF163DA7"/>
+                    <CheckBox x:Name="pineappleTopping" Content="PINEAPPLE" HorizontalAlignment="Left" Margin="0,231,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold"/>
+                    <CheckBox x:Name="spinachTopping" Content="SPINACH" HorizontalAlignment="Left" Margin="0,259,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold" Foreground="#FF163DA7"/>
+                    <CheckBox x:Name="zucchiniT" Content="ZUCCHINI" HorizontalAlignment="Left" Margin="0,288,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontWeight="Bold" FontSize="16" FontFamily="Sitka Small"/>
+                    <CheckBox x:Name="grilledTopping" Content="GRILLED CHICKEN" HorizontalAlignment="Left" Margin="0,317,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <CheckBox x:Name="paneerTopping" Content="PANEER" HorizontalAlignment="Left" Margin="618,237,0,0" VerticalAlignment="Top" Foreground="#FF163DA7" FontSize="16" FontStyle="Italic" FontFamily="Sitka Small" Height="24" Width="103" RenderTransformOrigin="0.557,-0.417" IsEnabled="False" FontWeight="Bold"/>
+        <Grid HorizontalAlignment="Left" Height="100" Margin="68,437,-168,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+        <Grid HorizontalAlignment="Left" Height="333" Margin="925,150,0,0" VerticalAlignment="Top" Width="341" Background="#FFD74C4C">
+            <GroupBox x:Name="groupBox3" Header="ADD-ONS" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="300" Width="321" FontFamily="Sitka Heading" FontSize="24" FontStyle="Italic" Foreground="#FFDCD8D8">
+                <Grid Height="350" Margin="10,0,-2.333,0" VerticalAlignment="Top">
+                    <CheckBox x:Name="cokeAddon" Content="COKE-Add $2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" Foreground="#FF5EE9D4" Background="#FFEE33D8" FontWeight="Bold"/>
+                    <CheckBox x:Name="rootBeerAddon" Content="ROOT BEER-Add $2" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" Foreground="#FF5EE9D4" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold"/>
+                    <CheckBox x:Name="potatoWedgesAddon" Content="POTATO WEDGES-Add $4" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Foreground="#FF5EE9D4" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold"/>
+                    <CheckBox x:Name="garlicBreadAddon" Content="GARLIC BREAD-Add $3" HorizontalAlignment="Left" Margin="0,87,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold" Foreground="#FF5EE9D4"/>
+                    <CheckBox x:Name="honeygarlicAddon" Content="HONEY GARLIC DIP-Add $2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,116,0,0" Foreground="#FF5EE9D4" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold"/>
+                    <CheckBox x:Name="barbequeaddon" Content="BARBEQUE SAUSE-Add $2" HorizontalAlignment="Left" Margin="0,145,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" Foreground="#FF5EE9D4" FontWeight="Bold"/>
+                    <CheckBox x:Name="chickenWingsAddon" Content="CHICKEN WINGS-Add $5" HorizontalAlignment="Left" Margin="0,175,0,0" VerticalAlignment="Top" Foreground="#FF5EE9D4" FontFamily="Sitka Small" FontSize="16" FontWeight="Bold"/>
+                    <CheckBox x:Name="pestoAddon" Content="PESTO-Add $2" HorizontalAlignment="Left" Margin="0,203,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" Foreground="#FF5EE9D4" FontWeight="Bold"/>
+                    <CheckBox x:Name="chickenPollini" Content="CHICKEN POLLINI -Add $5" HorizontalAlignment="Left" Margin="2,231,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" Foreground="#FF5EE9D4" FontWeight="Bold"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <ScrollBar x:Name="scrollBar" HorizontalAlignment="Left" Margin="450,637,-468,0" VerticalAlignment="Top" Grid.Column="1" Width="18" Height="33"/>
+    </Grid>
+</Window>

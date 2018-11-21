@@ -1,0 +1,298 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace AlwaysPizza_Toronto
+{
+    /// <summary>
+    /// Interaction logic for Window2.xaml
+    /// </summary>
+    public partial class Window2 : Window
+    {
+        public static int totalCost = 0;
+        public int sizePrice = 0;
+        int toppingCount = 0;
+       public static string size = "";
+        public Window2()
+        {
+            InitializeComponent();
+            string name1 = MainWindow.name;
+            welcomeNote.Content = "Welcome  " + name1.ToUpper()+" !!!";
+            
+        }
+
+        private void showTotal(int totalCost)
+        {
+            currentTotal.Content = totalCost;
+        }
+       
+
+        private void checkOutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 win3 = new Window3();
+            win3.Show();
+            this.Hide();
+        }
+
+        private void smallSize_Checked(object sender, RoutedEventArgs e)
+        {
+            if (size != "")
+            {
+                totalCost = 0;
+            }
+            size = "Small";
+            totalCost = totalCost + 7;
+            showTotal(totalCost);
+        }
+
+        private void mediumSize_Checked(object sender, RoutedEventArgs e)
+        {
+            if (size != "")
+            {
+                totalCost = 0;
+            }
+            size = "Medium";
+            totalCost = totalCost + 9;
+            showTotal(totalCost);
+        }
+
+        private void largeSize_Checked(object sender, RoutedEventArgs e)
+        {
+            if (size != "")
+            {
+                totalCost = 0;
+            }
+            size = "Large";
+            totalCost = totalCost + 12;
+            showTotal(totalCost);
+        }
+
+
+        public static string crest = "";
+        private void normalCrest_Checked(object sender, RoutedEventArgs e)
+        {
+            crest = "Normal";
+        }
+
+        private void thinCrest_Checked(object sender, RoutedEventArgs e)
+        {
+            crest = "Thin";
+        }
+
+        private void thickCrest_Checked(object sender, RoutedEventArgs e)
+        {
+            crest = "Thick";
+        }
+
+
+        private void panCrest_Checked(object sender, RoutedEventArgs e)
+        {
+            crest = "Pan Fried";
+            totalCost = totalCost + 2;
+            showTotal(totalCost);
+        }
+        
+
+        private void fetaTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            if(fetaTopping.IsChecked==true)
+                 updateTotalWithTopping();
+            
+        }
+
+        private void cheddarTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            if (cheddarTopping.IsChecked == true)
+                updateTotalWithTopping();
+        }
+
+        private void grilledTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            if (grilledTopping.IsChecked == true)
+                  updateTotalWithTopping();
+        }
+
+        private void blackOlivesTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void greenOlivesTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void dryChilliTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void jalapenos_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void mushroomTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void pineappleTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void spinachTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void zucchiniTopping_Checked(object sender, RoutedEventArgs e)
+        {
+            toppingCount++;
+            updateTotalWithTopping(toppingCount);
+        }
+
+
+        private void updateTotalWithTopping()
+        {
+            toppingCount++;
+            if (toppingCount > 3)
+            {
+                totalCost = totalCost + (toppingCount - 3);
+                currentTotal.Content = totalCost;
+            }
+        }
+
+        private void cokeAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 2;
+            currentTotal.Content = totalCost;
+        }
+
+        private void rootBeerAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 2;
+            currentTotal.Content = totalCost;
+        }
+
+        private void potatoWedgesAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 4;
+            currentTotal.Content = totalCost;
+        }
+
+        private void garlicBreadAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 3;
+            currentTotal.Content = totalCost;
+        }
+
+        private void honeygarlicAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 2;
+            currentTotal.Content = totalCost;
+        }
+
+        private void barbequeaddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 2;
+            currentTotal.Content = totalCost;
+        }
+
+        private void chickenWingsAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 5;
+            currentTotal.Content = totalCost;
+        }
+
+        private void pestoAddon_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 2;
+            currentTotal.Content = totalCost;
+        }
+
+        private void chickenPolliniAddOn_Checked(object sender, RoutedEventArgs e)
+        {
+            totalCost = totalCost + 5;
+            currentTotal.Content = totalCost;
+        }
+
+       
+        private void clear_Click(object sender, RoutedEventArgs e)
+        {
+            smallSize.IsChecked = false;
+            mediumSize.IsChecked = false;
+            largeSize.IsChecked = false;
+            normalCrest.IsChecked = false;
+            thinCrest.IsChecked = false;
+            thickCrest.IsChecked = false;
+            panCrest.IsChecked = false;
+            fetaTopping.IsChecked = false;
+            cheddarTopping.IsChecked = false;
+            grilledTopping.IsChecked = false;
+            blackOlivesTopping.IsChecked = false;
+            greenOlivesTopping.IsChecked = false;
+            dryChilliTopping.IsChecked = false;
+            jalapenos.IsChecked = false;
+            mushroomTopping.IsChecked = false;
+            pineappleTopping.IsChecked = false;
+            spinachTopping.IsChecked = false;
+            zucchiniTopping.IsChecked = false;
+            cokeAddon.IsChecked = false;
+            rootBeerAddon.IsChecked = false;
+            potatoWedgesAddon.IsChecked = false;
+            garlicBreadAddon.IsChecked = false;
+            honeygarlicAddon.IsChecked = false;
+            barbequeaddon.IsChecked = false;
+            chickenWingsAddon.IsChecked = false;
+            pestoAddon.IsChecked = false;
+            chickenPolliniAddOn.IsChecked = false; 
+        }
+    }
+}

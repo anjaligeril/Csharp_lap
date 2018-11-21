@@ -12,3 +12,4 @@ C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\Alway
 C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.csproj.GenerateResource.Cache
 C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.exe
 C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\AlwaysPizza.pdb
+C:\Users\geril\Desktop\ANJALI\c#\project\AlwaysPizza\AlwaysPizza\obj\Debug\Selection.g.cs

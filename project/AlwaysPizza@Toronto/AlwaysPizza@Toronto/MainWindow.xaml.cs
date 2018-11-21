@@ -10,18 +10,37 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AlwaysPizza
+namespace AlwaysPizza_Toronto
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string name;
         public MainWindow()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void continueBtn_Click(object sender, RoutedEventArgs e)
+        {           
+            name = nameOfCustomer.Text;
+            if (name != "")
+            {
+                Window2 win2 = new Window2();
+                win2.Show();
+                this.Hide();
+            }else
+            {
+                MessageBox.Show("Please enter valid information");
+            }
+           
         }
     }
 }
