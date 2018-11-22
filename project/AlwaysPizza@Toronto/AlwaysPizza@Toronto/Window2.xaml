@@ -14,15 +14,15 @@
                     <GradientStop Color="#FFCA3A3A" Offset="0.658"/>
                 </RadialGradientBrush>
             </Grid.Background>
-            <Image x:Name="image" HorizontalAlignment="Left" Height="83" Margin="334,2,0,0" VerticalAlignment="Top" Width="200" Source="http://worldartsme.com/images/eating-pizza-clipart-1.jpg"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="83" Margin="334,2,0,0" VerticalAlignment="Top" Width="200" Source="http://www.vectorfree.com/media/vectors/pizza-slice-logo.jpg"/>
             <Label x:Name="label" Content="ALWAYS PIZZA !!!" HorizontalAlignment="Left" Margin="534,10,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="36" Foreground="#FFA0E7C6" Height="58" Width="356" FontWeight="Bold"/>
         </Grid>
         <Label x:Name="label1" Content="Choose Your Favorite Pizza !!.." HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Foreground="#FF1C7878" FontSize="24" FontWeight="Bold" FontStyle="Italic" FontFamily="Sitka Heading" Height="35" Width="351"/>
         <Grid HorizontalAlignment="Left" Height="312" Margin="7,143,0,0" VerticalAlignment="Top" Width="207" Background="#FFD74C4C"/>
         <GroupBox x:Name="groupBox" Header="SIZE" HorizontalAlignment="Left" Margin="18,144,0,0" VerticalAlignment="Top" Height="292" Width="181" Content="" FontSize="24" FontFamily="Sitka Heading" FontWeight="Bold" FontStyle="Italic" Foreground="#FFDCD8D8"/>
-        <RadioButton x:Name="smallSize" Content="SMALL" HorizontalAlignment="Left" Margin="76,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.886,-5.932" Foreground="#FFF5E70F" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" Height="19" Width="94" FontWeight="Bold" Checked="smallSize_Checked"/>
-        <RadioButton x:Name="mediumSize" Content="MEDIUM" HorizontalAlignment="Left" Margin="76,242,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" Foreground="#FFF5E70F" Height="19" Width="108" FontWeight="Bold" Checked="mediumSize_Checked"/>
-        <RadioButton x:Name="largeSize" Content="LARGE" HorizontalAlignment="Left" Margin="76,283,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontStyle="Italic" Foreground="#FFF5E70F" Height="18" Width="88" FontWeight="Bold" Checked="largeSize_Checked"/>
+        <RadioButton x:Name="smallSize" Content="SMALL-$5" HorizontalAlignment="Left" Margin="41,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.886,-5.932" Foreground="#FFF5E70F" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" Height="19" Width="108" FontWeight="Bold" Checked="smallSize_Checked"/>
+        <RadioButton x:Name="mediumSize" Content="MEDIUM-$7" HorizontalAlignment="Left" Margin="41,240,0,0" VerticalAlignment="Top" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" Foreground="#FFF5E70F" Height="19" Width="130" FontWeight="Bold" Checked="mediumSize_Checked"/>
+        <RadioButton x:Name="largeSize" Content="LARGE-$10" HorizontalAlignment="Left" Margin="41,281,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontStyle="Italic" Foreground="#FFF5E70F" Height="20" Width="124" FontWeight="Bold" Checked="largeSize_Checked"/>
         <Grid HorizontalAlignment="Left" Height="311" Margin="231,144,0,0" VerticalAlignment="Top" Width="246" Background="#FFD74C4C">
             <GroupBox x:Name="groupBox1" Header="CREST" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="289" Width="222" Foreground="#FFDCD8D8" FontFamily="Sitka Heading" FontSize="24" FontStyle="Italic" FontWeight="Bold">
                 <Grid HorizontalAlignment="Left" Height="247" Margin="10,0,-2,-15.667" VerticalAlignment="Top" Width="202">
@@ -33,7 +33,7 @@
                 </Grid>
             </GroupBox>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="312" Margin="494,143,0,0" VerticalAlignment="Top" Width="287" Background="#FFD74C4C">
+        <Grid HorizontalAlignment="Left" Height="333" Margin="494,143,0,0" VerticalAlignment="Top" Width="287" Background="#FFD74C4C">
             <GroupBox x:Name="groupBox2" Header="TOPPING" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Width="271" Foreground="#FFDCD8D8" FontSize="24" FontFamily="Sitka Heading" FontWeight="Bold" FontStyle="Italic" Margin="10,-4,0,0">
                 <Grid HorizontalAlignment="Left" Height="268" Margin="10,0,0,0" VerticalAlignment="Top" Width="238">
                     <CheckBox x:Name="fetaTopping" Content="FETA CHEESE" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Small" FontWeight="Bold" Foreground="#FF163DA7" Checked="fetaTopping_Checked" Unchecked="fetaTopping_Checked"/>
@@ -72,6 +72,8 @@
         <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label x:Name="currentTotal" Content="" HorizontalAlignment="Left" Margin="318,501,0,0" VerticalAlignment="Top" FontFamily="Sitka Display" FontSize="24" FontWeight="Bold"/>
         <Button x:Name="clear" Content="CLEAR" HorizontalAlignment="Left" Margin="590,501,0,0" VerticalAlignment="Top" Width="169" Height="41" FontSize="22" FontFamily="Sitka Heading" FontWeight="Bold" Click="clear_Click"/>
+        <Label x:Name="label5" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="More Than 3 costs $1 for each" HorizontalAlignment="Left" Margin="508,434,0,0" VerticalAlignment="Top" Width="251" FontFamily="Sitka Display" FontSize="18" Foreground="#FF163DA7"/>
 
     </Grid>
 </Window>

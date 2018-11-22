@@ -37,13 +37,11 @@ namespace AlwaysPizza_Toronto
    
         private void checkOutBtn_Click(object sender, RoutedEventArgs e)
         {
-            Window3 win3 = new Window3();
-            win3.Show();
-            this.Hide();
-            Console.WriteLine(size + "\n" + crest);
+          
             if (ft)
             {
-                toppingDetails = toppingDetails + "fetaCheese,";
+                Console.WriteLine("here");
+               Console.WriteLine( toppingDetails = toppingDetails + "fetaCheese,");
 
             }
             if (ct)
@@ -96,7 +94,7 @@ namespace AlwaysPizza_Toronto
                     toppingDetails = toppingDetails + "zucchini.";
 
                 }
-                //Console.WriteLine(toppingDetails);
+                Console.WriteLine(toppingDetails);
                 if (cao)
                 {
                     addOnDetails = addOnDetails + "Coke,";
@@ -133,7 +131,7 @@ namespace AlwaysPizza_Toronto
             {
                 addOnDetails = addOnDetails + "chickenPollini.";
             }
-          //  Console.WriteLine(addOnDetails);
+          // Console.WriteLine(addOnDetails);
 
 
             //store in database
@@ -158,6 +156,11 @@ namespace AlwaysPizza_Toronto
                 // Show any error message.
                 MessageBox.Show(ex.Message);
             }
+
+            Window3 win3 = new Window3();
+            win3.Show();
+            this.Hide();
+            Console.WriteLine(size + "\n" + crest);
 
         }
         
@@ -195,25 +198,31 @@ namespace AlwaysPizza_Toronto
         private void normalCrest_Checked(object sender, RoutedEventArgs e)
         {
             crest = "Normal";
+            crestPrice = 0;
         }
 
         private void thinCrest_Checked(object sender, RoutedEventArgs e)
         {
             crest = "Thin";
+            crestPrice = 0;
         }
 
         private void thickCrest_Checked(object sender, RoutedEventArgs e)
         {
             crest = "Thick";
+            crestPrice = 0;
         }
 
 
         private void panCrest_Checked(object sender, RoutedEventArgs e)
         {
-            crest = "Pan Fried";
-            crestPrice = 2;
-            totalCost = sizePrice + crestPrice + toppingPrice + addOnprice;
-            currentTotal.Content = totalCost;
+            
+                crest = "Pan Fried";
+                crestPrice = 2;
+                totalCost = sizePrice + crestPrice + toppingPrice + addOnprice;
+                currentTotal.Content = totalCost;
+            
+            
         }
 
         public int toppingPrice = 0;

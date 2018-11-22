@@ -14,7 +14,7 @@
                     <GradientStop Color="#FFCA3A3A" Offset="0.658"/>
                 </RadialGradientBrush>
             </Grid.Background>
-            <Image x:Name="image" HorizontalAlignment="Left" Height="83" Margin="116,2,0,0" VerticalAlignment="Top" Width="193" Source="http://worldartsme.com/images/eating-pizza-clipart-1.jpg"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="83" Margin="116,2,0,0" VerticalAlignment="Top" Width="193" Source="http://www.vectorfree.com/media/vectors/pizza-slice-logo.jpg"/>
         </Grid>
         <Label x:Name="label" Content="ALWAYS PIZZA !!!" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontSize="36" FontWeight="Bold" Foreground="#FFA0E7C6" Height="58" Width="356"/>
         <Button x:Name="continueBtn" Content="ORDER" HorizontalAlignment="Left" Margin="288,322,0,0" VerticalAlignment="Top" Width="133" Click="continueBtn_Click" RenderTransformOrigin="0.622,0.468" FontSize="22" FontFamily="Sitka Heading" FontWeight="Bold"/>

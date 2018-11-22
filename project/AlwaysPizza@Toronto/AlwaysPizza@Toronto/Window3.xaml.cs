@@ -24,15 +24,28 @@ namespace AlwaysPizza_Toronto
             InitializeComponent();
             sizePizza.Content = Window2.size;
             crestPizza.Content = Window2.crest;
-            //Console.WriteLine(Window2.toppingDetails);
-           // Console.WriteLine(Window2.addOnDetails);
+            Console.WriteLine("window3"+Window2.toppingDetails);
+           Console.WriteLine("window3"+Window2.addOnDetails);
             toppingPizza.Content = Window2.toppingDetails;
             addOnsPizza.Content = Window2.addOnDetails;
             int price = Window2.totalCost;
             totalPrice.Content = (price).ToString();
-            double tax = (price * 13) / 100;
+            float tax = (price * 13.00f) / 100;
+            Console.WriteLine("price"+price);
             hst.Content = (tax).ToString();
             grandTotal.Content = (price + tax).ToString();
+        }
+
+        private void EXIT_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void changeOrder_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win = new MainWindow();
+            win.Show();
+            this.Hide();
         }
     }
 }
