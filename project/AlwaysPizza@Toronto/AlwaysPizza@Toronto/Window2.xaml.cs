@@ -37,32 +37,34 @@ namespace AlwaysPizza_Toronto
    
         private void checkOutBtn_Click(object sender, RoutedEventArgs e)
         {
-          
-            if (ft)
+            if (totalCost != 0)
             {
-                Console.WriteLine("here");
-               Console.WriteLine( toppingDetails = toppingDetails + "fetaCheese,");
 
-            }
-            if (ct)
-            {
-                toppingDetails = toppingDetails + "cheddarCheese,";
+                if (ft)
+                {
+                    Console.WriteLine("here");
+                    Console.WriteLine(toppingDetails = toppingDetails + "fetaCheese,");
 
-            }
-            if (gt)
-            {
-                toppingDetails = toppingDetails + "grilledChicken,";
+                }
+                if (ct)
+                {
+                    toppingDetails = toppingDetails + "cheddarCheese,";
 
-            }
-            if (bot)
-            {
-                toppingDetails = toppingDetails + "blackOlive,";
+                }
+                if (gt)
+                {
+                    toppingDetails = toppingDetails + "grilledChicken,";
 
-            }
-            if (got)
-            {
-                toppingDetails = toppingDetails + "greenOlive,";
-            }
+                }
+                if (bot)
+                {
+                    toppingDetails = toppingDetails + "blackOlive,";
+
+                }
+                if (got)
+                {
+                    toppingDetails = toppingDetails + "greenOlive,";
+                }
 
                 if (dct)
                 {
@@ -105,58 +107,58 @@ namespace AlwaysPizza_Toronto
                 }
                 if (pwao)
                 {
-                addOnDetails = addOnDetails + "potatoWedges,";
-            }
-            if (gbao)
-            {
-                addOnDetails = addOnDetails + "garlicBread,";
-            }
-            if (hgao)
-            {
-                addOnDetails = addOnDetails + "honeyGarlic,";
-            }
-            if (bao)
-            {
-                addOnDetails = addOnDetails + "barbeque,";
-            }
-            if (cwao)
-            {
-                addOnDetails = addOnDetails + "chickenWings,";
-            }
-            if (pao)
-            {
-                addOnDetails = addOnDetails + "pesto,";
-            }
-            if (cpao)
-            {
-                addOnDetails = addOnDetails + "chickenPollini.";
-            }
-          // Console.WriteLine(addOnDetails);
+                    addOnDetails = addOnDetails + "potatoWedges,";
+                }
+                if (gbao)
+                {
+                    addOnDetails = addOnDetails + "garlicBread,";
+                }
+                if (hgao)
+                {
+                    addOnDetails = addOnDetails + "honeyGarlic,";
+                }
+                if (bao)
+                {
+                    addOnDetails = addOnDetails + "barbeque,";
+                }
+                if (cwao)
+                {
+                    addOnDetails = addOnDetails + "chickenWings,";
+                }
+                if (pao)
+                {
+                    addOnDetails = addOnDetails + "pesto,";
+                }
+                if (cpao)
+                {
+                    addOnDetails = addOnDetails + "chickenPollini.";
+                }
+                // Console.WriteLine(addOnDetails);
 
 
-            //store in database
+                //store in database
 
-            string connectionString = "datasource=127.0.0.1;port=3308;username=root;password=;database=alwayspizza;";
-            string query = "INSERT INTO orderdetails(`order_id`, `size`, `crest`, `topping`,`addons`,`total_price`) VALUES (NULL, '" + size + "', '" + crest + "', '" + toppingDetails + "','" + addOnDetails + "','" + totalCost + "')";
-            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-            commandDatabase.CommandTimeout = 60;
+                string connectionString = "datasource=127.0.0.1;port=3308;username=root;password=;database=alwayspizza;";
+                string query = "INSERT INTO orderdetails(`order_id`, `size`, `crest`, `topping`,`addons`,`total_price`) VALUES (NULL, '" + size + "', '" + crest + "', '" + toppingDetails + "','" + addOnDetails + "','" + totalCost + "')";
+                MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+                MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
 
-            try
-            {
-                databaseConnection.Open();
-                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlDataReader myReader = commandDatabase.ExecuteReader();
 
-                MessageBox.Show("order succesfully placed..");
+                    MessageBox.Show("order succesfully placed..");
 
-                databaseConnection.Close();
+                    databaseConnection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Show any error message.
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                // Show any error message.
-                MessageBox.Show(ex.Message);
-            }
-
             Window3 win3 = new Window3();
             win3.Show();
             this.Hide();
@@ -628,7 +630,9 @@ namespace AlwaysPizza_Toronto
             barbequeaddon.IsChecked = false;
             chickenWingsAddon.IsChecked = false;
             pestoAddon.IsChecked = false;
-            chickenPolliniAddOn.IsChecked = false; 
+            chickenPolliniAddOn.IsChecked = false;
+            totalCost = 0;
+            currentTotal.Content = totalCost;
         }
     }
 }

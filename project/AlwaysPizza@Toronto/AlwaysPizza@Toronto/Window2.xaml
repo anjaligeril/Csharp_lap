@@ -70,7 +70,7 @@
         <Label x:Name="label3" Content="$" HorizontalAlignment="Left" Margin="289,501,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Sitka Heading" FontWeight="Bold" FontStyle="Italic"/>
         <Button x:Name="checkOutBtn" Content="CHECK OUT" HorizontalAlignment="Left" Margin="806,501,0,0" VerticalAlignment="Top" Width="242" Height="41" FontSize="22" FontFamily="Sitka Heading" FontWeight="Bold" Click="checkOutBtn_Click"/>
         <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label x:Name="currentTotal" Content="" HorizontalAlignment="Left" Margin="318,501,0,0" VerticalAlignment="Top" FontFamily="Sitka Display" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="currentTotal" Content="" HorizontalAlignment="Left" Margin="318,501,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
         <Button x:Name="clear" Content="CLEAR" HorizontalAlignment="Left" Margin="590,501,0,0" VerticalAlignment="Top" Width="169" Height="41" FontSize="22" FontFamily="Sitka Heading" FontWeight="Bold" Click="clear_Click"/>
         <Label x:Name="label5" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label x:Name="label6" Content="More Than 3 costs $1 for each" HorizontalAlignment="Left" Margin="508,434,0,0" VerticalAlignment="Top" Width="251" FontFamily="Sitka Display" FontSize="18" Foreground="#FF163DA7"/>
